@@ -1,0 +1,593 @@
+Wget/1.8.2
+Mediapartners-Google/2.1
+lwp-trivial/1.41
+NetBSD-ftp/20031210
+Wget/1.10.2
+Wget/1.10.1
+Wget/1.8.1
+Wget/1.9.1
+tnftp/20050625
+Wget/1.7
+libwww-perl/5.79
+msn/1.0 (+http://search.msn.com/msn.htm)
+Google/2.1 (+http://www.google.com/.html)
+Mozilla/5.0 (compatible Yahoo! Slurp http://help.yahoo.com/help/us/ysearch/slurp)
+sproose/0.1-alpha (sproose crawler http://www.sproose.com/.html crawler@sproose.com)
+BrowserEmulator/0.9 see http://dejavu.org
+Mozilla/5.0 (compatible Google/2.1 +http://www.google.com/.html)
+iCCrawler (http://www.iccenter.net/.htm)
+Java/1.4.1_04
+msn/0.9 (+http://search.msn.com/msn.htm)
+NutchCVS/0.8-dev (Nutch running at UW http://www.nutch.org/docs/en/.html sycrawl@cs.washington.edu)
+Mozilla/4.0 compatible ZyBorg/1.0 (wn-14.zyborg@looksmart.net http://www.WISEnut.com)
+Mozilla/4.0 (compatible Cerberian Drtrs Version-3.2-Build-0)
+Syntryx ANT Scout Chassis Pheromone Mozilla/4.0 compatible crawler
+Java/1.5.0_06
+Seek/1.0 (http://www.seek.net/.html) HTTPFetcher/2.1
+Francis/2.0 (francis@neomo.de http://www.neomo.de/)
+webmeasurement- http://rvs.informatik.uni-leipzig.de/.php
+cometrics- http://www.cometrics.de
+Giga/2.0 http://www.gigablast.com/spider.html
+Snap/1.0
+Mozilla/5.0 (Windows) NimbleCrawler 2.0.1 obeys UserAgent NimbleCrawler For problems contact: crawler@healthline.com
+Mozilla/4.0 (compatible MyFamily/1.0 http://www.myfamilyinc.com)
+gonzo1[P] mailto:crawleradmin.t-info@telekom.de
+Mozilla/4.0 compatible ZyBorg/1.0 (wn-16.zyborg@looksmart.net http://www.WISEnut.com)
+ia_archiver
+Exa/2.0
+IRL/2.0 (compatible MSIE 6.0 http://irl.cs.tamu.edu/crawler)
+Nusearch Spider (www.nusearch.com)
+Seek/1.0 (http://www.seek.net/.html) HTTPFetcher/2.2
+Krugle/KrugleNutch/0.8+ (Krugle web crawler http://corp.krugle.com/crawler/info.html webcrawler@krugle.com)
+ichiro/2.0 (http://help.goo.ne.jp/door/crawler.html)
+Francis/2.0 (francis@neomo.de http://www.neomo.de/pages/crawler.php)
+Java/1.4.2_03
+Mozilla/4.5 (compatible HTTrack 3.0x Windows 98)
+gonzo1[P] +http://www.suchen.de/popups/faq.jsp
+msn-media/1.0 (+http://search.msn.com/msn.htm)
+voyager/1.0
+PycURL/7.15.5
+Mozilla/4.0 (compatible DepSpid/5.03 +http://about.depspid.net)
+yacy (x86 Windows 2000 5.0 java 1.5.0_09 Europe/de) yacy.net
+DomaindateiSpider/1.0 (http://www.domaindatei.de/spider.html * Deine Domain ist gespidert worden!!!
+sproose/1.0beta (sproose  http://www.sproose.com/.html crawler@sproose.com)
+Mozilla/5.0 (compatible Web/0.1 http://www.web.ru/.html)
+Mozilla/5.0 (compatible Mojeek/2.0 http://www.mojeek.com/.html)
+Exa/3.0
+WWWeasel Ro v1.00 (http://wwweasel.de)
+Turnitin/2.1 (http://www.turnitin.com/ro/crawlerinfo.html)
+larbin_2.6.3 larbin2.6.3@unspecified.mail
+MJ12/v1.2.0 (http://majestic12.co.uk/.php?+)
+Semager/1.0 (http://www.semager.de)
+Python-urllib/2.4
+IRL/3.0 (compatible MSIE 6.0 http://irl.cs.tamu.edu/crawler)
+Jakarta Commons-HttpClient/3.0.1
+Mozilla/5.0 (compatible Exa/3.0 +http://www.exa.com/go/ro)
+Snoopy v1.2
+ShopWiki/1.0 ( +http://www.shopwiki.com/wiki/Help:)
+ICCrawler - ICjobs (http://www.icjobs.de/.htm)
+Cazoodle/0.1 (Cazoodle Crawler http://www.cazoodle.com mq@cazoodle.com)
+lmspider/Nutch-0.9-dev (For research purposes. www.nuance.com)
+deepcrawler/1.0 (+http://deepcrawler.org/crawler.htm)
+Mozilla/4.0 (compatible Naver/1.0 http://help.naver.com/delete_main.asp)
+Snap/1.0 (+http://www.snap.com)
+Speedy Spider (Entireweb Beta/1.3 http://www.entireweb.com/about/search_tech/speedyspider/)
+Java/1.5.0_08
+http://www.uni-koblenz.de/~flocke/ro-info.txt
+ilial/Nutch-0.9 (Ilial Inc. is a Los Angeles based Internet startup company. For more information please visit http://www.ilial.com/crawler http://www.ilial.com/crawler crawl@ilial.com)
+MQ/Nutch-0.9-dev (MQ Nutch Crawler http://vw.cs.uiuc.edu mq@cs.uiuc.edu)
+Cazoodle/Nutch-0.9-dev (Cazoodle Crawler http://www.cazoodle.com/cazoodle cazoodle@cazoodle.com)
+Google-Image/1.0
+Mozilla/5.0 (Windows U Windows NT 5.1 de rv:1.8.1.6) Gecko/20070725 Frontpage
+Cazoodle/Cazoodle-0.1 (Cazoodle Crawler http://www.cazoodle.com/cazoodle cazoodle@cazoodle.com)
+Lapozz/1.5 (+http://ro.lapozz.hu)
+libwww-perl/5.805
+hbtronix.spider.2 -- http://hbtronix.de/spider.php
+Mozilla/5.0 (compatible google/2.1 +http://www.google.com/.html)
+Google-Image/1.0 (+http://www.google.com/.html)
+Mozilla/5.0 (compatible Konqueror/3.5 Linux) KHTML/3.5.5 (like Gecko) (Exa-Thumbnails)
+Mozilla/5.0 (Twiceler-0.9 http://www.cuill.com/twiceler/ro.html)
+Mozilla/5.0 (X11 U Linux i686 (x86_64) de rv:1.8.1.4 YaCy 0.510/03501 yacy.net) Gecko/20070515 Firefox/2.0.0.4
+yacy (amd64 Linux 2.6.22-rc3-mm1-kernel-oneill java 1.6.0_01 Europe/en) http://yacy.net/yacy/.html
+disco/Nutch-0.9 (experimental crawler ... please email imagine@gmail.com if problems observed nedrocks@gmail.com)
+Google 2.1
+Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)
+Mozilla/5.0 (SnapPreview) Gecko/20061206 Firefox/1.5.0.9
+Mozilla/5.0 (compatible heritrix/1.12.0 +http://www.accelo.com)
+libwww-perl/5.64
+Giga/2.0 (http://www.gigablast.com/spider.html)
+Mozilla/5.0 (compatible Google/2.1 http://www.google.com/.html)
+Mozilla/5.0 (compatible Gigamega./1.0 +http://www.gigamega.net/.html)
+suchbaer.de
+libwww-perl/5.65
+Mozilla/5.0 (compatible LiteFinder/1.0 +http://www.litefinder.net/about.html)
+libwww-perl/5.803
+libwww-perl/5.808
+libwww-perl/5.69
+libwww-perl/5.53
+Microsoft URL Control - 6.00.8862
+Google/2.1 (+http://www.google.com/.html)
+MJ12/v1.0.8 (http://majestic12.co.uk/.php?+)
+Giga/3.0 (http://www.gigablast.com/spider.html)
+Snap/1.0 (Snap Shots +http://www.snap.com)
+Teemer (NetSeer Inc. http://www.netseer.com/crawler.html crawler@netseer.com)
+Mozilla/5.0 (compatible Yahoo! Slurp/3.0 http://help.yahoo.com/help/us/ysearch/slurp)
+Cazoodle/Nutch-0.9-dev (Cazoodle Crawler http://www.cazoodle.com mq@cazoodle.com)
+gonzo1[P] +http://www.suchen.de/faq.html
+yacy (i386 Linux 2.6.9-023stab044.12-smp java 1.6.0_03 Europe/en) http://yacy.net/yacy/.html
+Toplist
+TMCrawler
+Semager/1.1 (http://www.semager.de/blog/semager-s/)
+Mozilla/5.0 (compatible MJ12/v1.2.1 http://www.majestic12.co.uk/.php?+)
+Python-urllib/2.5
+Java/1.6.0_03
+Acoon-Ro v3.00 (http://www.acoon.de and http://www.acoon.com)
+Mozilla/4.0 (compatible MSIE 5.5 Windows NT 4.0 o)
+Apache/2.2.3 (Debian) mod_python/3.2.10 Python/2.4.4 PHP/5.2.0-8+etch7 mod_ssl/2.2.3 OpenSSL/0.9.8c
+WebAlta Crawler/2.0 (http://www.webalta.net/ru/about_webmaster.html) (Windows U Windows NT 5.1 ru-RU)
+Acoon-Ro v3.1.0 (http://www.acoon.de and http://www.acoon.com)
+yacy (x86 Windows XP 5.1 java 1.6.0_03 America/en) http://yacy.net/.html
+blackspider
+yacy (i386 Linux 2.6.9-023stab046.2-smp java 1.6.0_02 Europe/en) http://yacy.net/yacy/.html
+libwww-perl/5.63
+Mozilla/5.0 (compatible Ask Jeeves/Teoma +http://about.ask.com/en/docs/about/webmasters.shtml)
+msn/1.1 (+http://search.msn.com/msn.htm)
+TinEye/1.0 (http://tineye.com/crawler.html)
+Eurip/1.0 (+http://www.eurip.com) GetFile
+Wget/1.11
+Mozilla/5.0 (compatible Charlotte/1.0b http://www.searchme.com/support/)
+WWW-Mechanize/0.6.10 (http://rubyforge.org/projects/mechanize/)
+Acoon-Ro 4.0.0RC1 (http://www.acoon.de)
+Centiverse/3.0 (http://www.centiverse-project.net)
+IIIT/1.1 (Indian Language Web Search Engine http://webkhoj.iiit.net pvvpr at iiit dot ac dot in)
+Acoon-Ro 4.0.2 (http://www.acoon.de)
+libwww-perl/5.811
+Mozilla/5.0 (compatible disco/1.0 +http://discoveryengine.com/disco.html)
+libwww-perl/5.810
+WebAlta Crawler/1.3.34 (http://www.webalta.net/ru/about_webmaster.html) (Windows U Windows NT 5.1 ru-RU)
+OpenWebSpider/0.7 (http://www.openwebspider.org)
+MSR-ISRCCrawler
+Microsoft-WebDAV-MiniRedir/6.0.6000
+Euro/1.0 (http://www.ayell.eu)
+Mozilla/5.0 (compatible worio support [at] worio [dot] com +http://worio.com)
+Java/1.6.0_05
+ApacheBench/2.0.40-dev
+Mozilla/5.0 (compatible heritrix/1.14.0 +http://85.214.24.208)
+NetFusion/1.0 (Windows U Windows NT 5.1 en-US rv:1.8.0.1)
+Google/2.X
+libwww-perl/5.812
+Mozilla/5.0 (compatible heritrix/1.6.0 +http://www.schluetersche.de)
+Dot/1.0.1 (http://www.dotnetdotcom.org/#info crawler@dotnetdotcom.org)
+libwww-perl/5.48
+infometrics- http://www.infometrics.de
+Java/1.6.0_07
+Semager/1.2 http://www.semager.de/blog/semager-s/
+msn-media/1.1 (+http://search.msn.com/msn.htm)
+Mozilla/4.0 (compatible MSIE 5.01 Windows 95 MSIECrawler)
+Netluchs/Nutch-1.0-dev (  http://www.netluchs.de/ _do_not_spam_me___humans_please_use_info_at_netluchs.de_without_the_dash)
+ichiro/3.0 (http://help.goo.ne.jp/door/crawler.html)
+Mozilla/5.0 (Windows U Windows NT 5.1 de rv:1.9.0.1) Gecko/2008070208 Google/2.1
+libwww-perl/5.814
+libwww-perl/5.76
+ia_archiver (+http://www.alexa.com/site/help/webmasters crawler@alexa.com)
+Mozilla/5.0 (compatible Charlotte/1.1 http://www.searchme.com/support/)
+Mozilla/5.0 (compatible Google/2.1 http://www.google.com/.html)
+Java/1.6.0_06
+Yanga WorldSearch  v1.1/beta (http://www.yanga.co.uk/)
+Gais/3.0+(ro06@gais.cs.ccu.edu.tw+http://gais.cs.ccu.edu.tw/ro.php)
+Euro/1.0 (http://euro.ayell.eu)
+Mozilla/5.0 (compatible ScoutJet +http://www.scoutjet.com/)
+Mozilla/5.0 (compatible Dot/1.1 http://www.dotnetdotcom.org/ crawler@dotnetdotcom.org)
+Mozilla/4.0 (compatible Win32 WinHttp.WinHttpRequest.5)
+iCcrawler - iCjobs Stellenangee Jobs (http://www.icjobs.de)
+Semager/1.3 http://www.semager.de/blog/semager-s/
+Mozilla/5.0 (compatible Charlotte/1.0t http://www.searchme.com/support/)
+Mister Wong-/1.0 (http://www.mister-wong.de)
+Plone/0.1
+AmigaVoyager/2.95 (compatible MC680x0 AmigaOS)
+libwww-perl/5.821
+Zontir/0.1 (Web Crawler +http://www.zontir.com/)
+Jakarta Commons-HttpClient/3.1
+Java/1.6.0_04
+Mozilla/4.0 (compatible MSIE 7.0 Windows NT 6.0 WOW64 SLCC1 .NET CLR 3.0.04506 +http://www.mods.sub.cc news)
+Mozilla/5.0 (X11 U Linux x86_64 +http://Leecher.eu.tt crawler)
+Zontir/0.2 (Web Crawler +http://www.zontir.com/))
+Java/1.6.0_11
+kalooga/Kalooga (Kalooga http://www.kalooga.com/info.html?page=crawler)
+TSM Translation-Search-Machine (www.ttn.ch)
+Mozilla/5.0 (compatible iCcrawler - iCjobs Stellenangee Jobs http://www.icjobs.de)
+ami - http://www.amidalla.de - tech@amidalla.com libwww-perl/5.805
+Mozilla/4.0 (compatible Naver/1.0 http://help.naver.com/customer_webtxt_02.jsp)
+libra/1.0 (+http://search.msn.com/msn.htm)
+libwww-perl/5.822
+http://hilfe.acont.de/.html ACONT
+msn/2.0b
+weivel/Nutch-0.9 (weive.com - web spider http://www.weive.com/page/view/weivel weivel at weive dot com)
+SimilarPages/Nutch-1.0-dev (SimilarPages Nutch Crawler http://www.similarpages.com info at similarpages dot com)
+Jyxo/1
+Shelob (shelob@gmx.net)
+de_viewer larbin2.6.3@unspecified.mail
+libwww-perl/5.823
+W3C_Validator/1.654
+Java/1.6.0_12
+Mozilla/5.0 (compatible DBL/1.0 +http://www.dontbuylists.com/)
+Wget/1.11.4 (Red Hat modified)
+Mozilla/5.0 (Twiceler-0.9 http://www.cuil.com/twiceler/ro.html)
+msn/2.0b (+http://search.msn.com/msn.htm)
+Mozilla/5.0 (compatible SpyDom.de WebAnalyzer +http://www.SpyDom.de)
+yacy (amd64 Linux 2.6.28-12-generic java 1.6.0_13 GMT/en) http://yacy.net/.html
+Mozilla/5.0 (compatible Plukkie/1.1 http://www.je.com/plukkie.htm)
+Baiduspider+(+http://www.baidu.com/search/spider.htm)
+Java/1.6.0_13
+Mozilla/4.0 (compatible MSIE 6.0 Windows NT 5.1)/Nutch-1.0
+Python-urllib/1.17
+Mozilla/5.0 (compatible MJ12/v1.2.5 http://www.majestic12.co.uk/.php?+)
+yacy (amd64 Linux 2.6.27-14-generic java 1.6.0_0 Europe/de) http://yacy.net/.html
+Mozilla/5.0 (Windows U Windows NT 5.1 de rv:1.9.0.4) Gecko/2008102920 Wget/1.10.1
+NutchCVS/0.0x-dev (Nutch http://www.nutch.org/docs/.html nutch-agent@lists.sourceforge.net)
+WebAlta Crawler/1.3.23 (http://www.webalta.net/ru/about_webmaster.html) (Windows U Windows NT 5.1 ru-RU)
+libwww-perl/5.825
+beta
+Java/1.6.0_14
+Mozilla/5.0 (compatible Suchbaer/0.83 +http://.suchbaer.de/info.html)
+Euro/1.1 (http://euro.ayell.eu)
+Java/1.6.0_15
+Mozilla/5.0 (compatible Seznam screenshot-generator 2.0 +http://fulltext.sblog.cz/screenshot/)
+PHPCrawl
+Mozilla/5.0 (compatible sp/2.0 +http://www.seoprofiler.com// )
+Yandex/1.01.001 (compatible Win16 I)
+gonzo/1[P] (+http://www.suchen.de/faq.html)
+Mozilla/5.0 (compatible 008/0.83 http://www.80legs.com/spider.html) Gecko/2008032620
+Mozilla/5.0 (compatible sp/2.0.1 +http://www.seoprofiler.com// )
+Java/1.6.0_18
+Cityreview Ro (+http://www.cityreview.org/crawler/)
+Mozilla/5.0 (Windows U Windows NT 5.1 en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)
+libwww-perl/5.813
+Linguee  (http://www.linguee.com/ @linguee.com)
+Mozilla/5.0 (compatible sp/2.0.2 +http://www.seoprofiler.com// )
+Java/1.6.0_17
+curl/7.18.2 (x86_64-pc-linux-gnu) libcurl/7.18.2 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.8 libssh2/0.18
+msn/2.0b (+http://search.msn.com/msn.htm)._
+Mozilla/5.0 (compatible MJ12/v1.3.2 http://www.majestic12.co.uk/.php?+)
+Java/1.6.0_02
+copyright sheriff (+http://www.copyrightsheriff.com/)
+Yeti/1.0 (NHN Corp. http://help.naver.com/ros/)
+Java/1.6.0_16
+Java/1.6.0_19
+Mozilla/5.0 (compatible aiHit/1.0 +http://www.aihit.com/)
+Mozilla/5.0 (compatible MJ12/v1.3.3 http://www.majestic12.co.uk/.php?+)
+Mozilla/5.0 (compatible disco/1.1 +http://discoveryengine.com/disco.html
+libwww-perl/5.831
+Mozilla/5.0 (compatible Semager/1.4 http://www.semager.de/blog/semager-s/)
+Mozilla/4.7 (compatible OffByOne Windows 2000) Webster Pro V3.4
+Mozilla/5.0 (compatible sp/2.0.3 +http://www.seoprofiler.com// )
+GeoHasher/Nutch-1.0 (GeoHasher Web Search Engine geohasher.gotdns.org geo_hasher at yahoo * com)
+S2/1.0 (http://search2.net)
+CligooRo/1.0
+Mozilla/5.0 (compatible sp/2.0.4 +http://www.seoprofiler.com/ )
+libwww-perl/5.832
+Baiduspider+(+http://www.baidu.jp/spider/)
+Mozilla/5.0 (compatible Yandex/3.0 +http://yandex.com/s)
+Mozilla/5.0 (X11 U Linux i686 en-US rv:1.9.0.1 compatible iCcrawler - iCjobs Stellenangee Jobs http://www.icjobs.de) Gecko/20100401 iCjobs/2.3.1
+Mail.Ru/1.0
+Mozilla/5.0 (compatible bing/2.0 +http://www.bing.com/bing.htm)
+Mozilla/5.0 (compatible Yandex/3.0 MirrorDetector +http://yandex.com/s)
+Mozilla/5.0 (compatible bing/2.0 +http://www.bing.com/bing.htm)
+Voyager/1.0
+facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+Mozilla/5.0 (Windows U Windows NT 6.0 en-GB rv:1.0 trendiction0.3.0 trendiction media spider http://www.trendiction.com// spider@trendiction.com) Gecko/20071127 Firefox/2.0.0.11
+Mozilla/5.0 (X11 U Linux i686 de rv:1.9.0.1 compatible iCjobs Stellenangee Jobs http://www.icjobs.de) Gecko/20100401 iCjobs/3.2.3
+Atomic_Email_Hunter/4.0
+Mozilla/5.0 (compatible Site/0.1 +http://www.site.org/ro/)
+msn-Products/1.0 (+http://search.msn.com/msn.htm)
+Mozilla/5.0 (compatible http://icvn.de/ua.php)
+weneo/Nutch-1.2 (weneo.de  http://www.weneo.de/  at weneo.de)
+msn/0.11 (+http://search.msn.com/msn.htm)
+ssearch_ (sSearch Crawler http://www.semantissimo.de)
+Mozilla/5.0 (Macintosh U Intel Mac OS X 10.6 google rv:1.9.2.12) Gecko/20101026 Firefox/3.6.12
+Mozilla/5.0 (compatible 008/0.83 http://www.80legs.com/webcrawler.html) Gecko/2008032620
+Mozilla/5.0 (compatible 008/0.83 http://www.80legs.com/webcrawler.html) Gecko/2008032620
+Wget/1.12 (linux-gnu)
+HotJava/1.1.5 FCS
+gold crawler
+LINK TRADE crawler ( +http://www.search.gvc.com/ )
+libwww-perl/5.837
+Mozilla/5.0 (compatible suggy v0.01a http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)
+Mozilla/5.0 (compatible ExDomain http://www.ex-domain.de/.html)
+Mozilla/5.0 (compatible Ezooms/1.0 ezooms.@gmail.com)
+Mozilla/5.0 (Windows U Windows NT 6.0 en-US rv:1.9.2.13) Gecko/20101203 Google 2.1 GTB7.1 (.NET CLR 3.5.30729)
+Wget/1.12 (freebsd8.2)
+Mozilla/5.0 (compatible CligooRo/2.0 +http://www.cligoo.de/wk/technik.php)
+GVC WEB crawler ( +http://www.search.gvc.com/add-url.htm)
+DomainWatcher
+libwww-perl/5.833
+libwww-perl/5.834
+libwww-perl/6.01
+libwww-perl/5.836
+Spider[Resource Description Engine] (Java HotSpot(TM) 64-Bit Server VM Windows Server 2008 R2 +http://www.daniel-nowak-ug.de)
+Microsoft Data Access Internet Publishing Provider Protocol Discovery
+Eurip/1.1 (+http://www.eurip.com) GetFile
+Mozilla/5.0 (Windows U Windows NT 6.1 de rv:1.9.2.13) Gecko/20101203 Google/2.1 (+http://www.google.com/.html)
+GNU/wget 1.8.4
+GNU/wget 1.8.5
+GNU/wget 1.8.6
+GNU/wget 1.8.7
+GNU/wget 1.8.8
+GNU/wget 1.8.9
+GNU/wget 1.8.10
+GNU/wget 1.8.11
+GNU/wget 1.8.12
+GNU/wget 1.8.13
+GNU/wget 1.8.14
+GNU/wget 1.8.15
+GNU/wget 1.8.16
+GNU/wget 1.8.17
+GNU/wget 1.8.18
+GNU/wget 1.8.19
+GNU/wget 1.8.20
+Mozilla/5.0 (compatible disco/1.1 +http://discoveryengine.com/disco.html)
+Domnutch-/Nutch-1.0 (Domnutch http://www.Nutch.de/)
+Lexxe/1.0 (lexxe@lexxe.com)
+Mozilla/5.0 (compatible Baiduspider/2.0 +http://www.baidu.com/search/spider.html)
+LongURL API
+bitly
+VWP URL-Expander- 0.1
+Bad-
+Hi-
+Mozilla/5.0 (compatible heritrix/1.14.4 +http://hpsg.fu-berlin.de)
+libwww-perl/6.02
+libwww-perl/6.02
+Mozilla/5.0 (compatible YandexMedia/3.0 +http://yandex.com/s)
+Mozilla/5.0 (compatible VWP URL-Expander- 0.2 (Beta) http://goo.gl/5SKWB)
+Mozilla/5.0 (compatible MJ12/v1.4.0 http://www.majestic12.co.uk/.php?+)
+libwww-perl/5.820
+Mozilla/6.0 (MSIE 6.0 Windows NT 5.1 HIT Labs Copyright Spider ro)
+Java/1.6.0_26
+GVC WEB crawler ( +http://www.globalvisioncommunication.com/directory/MAIN.htm)
+TestNutch/Nutch-1.2 (testing Nutch http://nutch.apache.org info@nutch.apache.org)
+Mozilla/5.0 (compatible SEOkicks-Ro +http://www.seokicks.de/ro.html)
+Schrein crawler
+Mozilla/5.0 (compatible SISTRIX Crawler http://crawler.sistrix.net/)
+Mozilla/5.0 (X11 Linux x86_64) AppleWebKit/534.24 (KHTML like Gecko Google Web Preview) Chrome/11.0.696 Safari/534.24
+Hitfaker/1.0 (compatible MSIE 6.0 Windows NT 5.2 .NET CLR 1.0.3705 by Robert Müller)
+Hitfaker 1.0 by Robert Müller
+WMS
+Applimana v1.0.0 (http://www.openwebspider.org/)
+Mozilla/5.0 (compatible Ahrefs/1.0 +http://ahrefs.com/ro/)
+Wget/1.11.2
+GID/2.0 (+http://www.gidnetwork.com/tools/gzip-test.php)
+Mozilla/5.0 (compatible Yahoo! Slurp China http://misc.yahoo.com.cn/help.html)
+Mozilla/5.0 (compatible Plukkie/1.4 http://www.je.com/plukkie.htm)
+curl/7.21.7 (x86_64-unknown-linux-gnu) libcurl/7.21.7 OpenSSL/1.0.0e zlib/1.2.5 libssh2/1.2.7
+BacklinkCrawler (http://www.backlinktest.com/crawler.html)
+LWP::Simple/5.835 libwww-perl/5.837
+Covario-IDS/1.0 (Covario http://www.covario.com/ids support at covario dot com)
+vik-ro/Nutch-1.0 (vikspider http://vik.com chenlibiti@163.com)
+Mozilla/5.0 (Windows NT 6.1 WOW64 rv:2.0.1) Gecko/20100101 Firefox/4.0.1 /Nutch-1.2
+COMODOspider/Nutch-1.0
+Seznam/3.0 (+http://fulltext.sblog.cz/)
+ps/0.1 (+http://www.picsearch.com/.html)
+Mail.RU/2.0
+python-requests.org
+Mozilla/5.0 (compatible sp/3.0 +http://www.seoprofiler.com/ )
+Mozilla/3.0 (compatible Linkman)
+Mozilla/5.0 (X11 Linux x86_64) AppleWebKit/534.51 (KHTML like Gecko Google Web Preview) Chrome/12.0.742 Safari/534.51
+Mozilla/5.0 (Macintosh U Intel Mac OS X 10_6_4 en-US) AppleWebKit/525.13 (KHTML like Gecko Google Page Speed) Chrome/8.0.552.237 Safari/525.13
+Mozilla/4.0 (compatible MSIE 6.0 Windows NT 5.1 SV1 InfoPath.1 .NET CLR 1.1.4322 .NET CLR 2.0.50727 MSIECrawler)
+Mozilla/5.0 (compatible YandexDirect/3.0 +http://yandex.com/s)
+nutch/1.2 (nutch)
+Mozilla/5.0 (compatible Ahrefs/2.0 +http://ahrefs.com/ro/)
+Pixray-Seeker/1.1 (Pixray-Seeker crawler@pixray.com)
+Mozilla/4.0 (compatible MSIE 6.0 Windows NT 5.1 YaCy 0.1 yacy.net)
+Mozilla/5.0 (compatible Volunia/1.0 spider@volunia.com)
+FAST Enterprise Crawler 6 / Scirus scirus-crawler@fast.no http://www.scirus.com/srsapp/contactus/
+nutch/Nutch-1.5-SNAPSHOT (Viterbi Web Crawler using Nutch 1.0)
+Mozilla/5.0/Nutch-1.1 (Windows U Windows NT 5.1 en-US rv:1.9.2.13)
+Mozilla/5.0 (Windows NT 6.1 WOW64 rv:8.0) Gecko/20100101 Firefox/8.0 slurp
+Mozilla/5.0 (compatible MJ12/v1.4.1 http://www.majestic12.co.uk/.php?+)
+Mozilla/5.0 (X11 U Linux x86_64 en-US rv:1.9.0.19 aggregator:Spinn3r (Spinn3r 3.1) http://spinn3r.com/ro) Gecko/2010040121 Firefox/3.0.19
+Wong // http://www.mister-wong.de/search/
+htdig
+CC/1.0 (+http://www.commoncrawl.org/.html)
+yacy (freeworld/global amd64 FreeBSD 9.0-RELEASE java 1.6.0 EST5EDT/en) http://yacy.net/.html
+Mozilla/5.0 (compatible MJ12/v1.4.2 http://www.majestic12.co.uk/.php?+)
+Mozilla/5.0 (compatible askpeter/5.4 +http://www.askpeter.info)
+curl/7.21.6 (x86_64-pc-linux-gnu) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3
+vX-NetGhost v.3.4 - vx-archiv.at
+Mozilla/5.0 (compatible OpenindexShallowSpider/Nutch-1.5-dev +http://www.openindex.io/en/webmasters/spider.html systemsATopenindexDOTio)
+DLE_Spider.exe
+crawler schrein crawler@schrein.nl id-1
+yacy (freeworld/global amd64 Windows 7 6.1 java 1.7.0_02 America/en) http://yacy.net/.html
+EC2LinkFinder
+Mozilla/5.0 (compatible PEAR HTTP_Request class http://feed.moo.jp/)
+Mozilla/5.0 (compatible LucidWorks/ + crawler at example dot com)
+Mozilla/5.0 (compatible OpenindexShallowSpider/Nutch-1.5-dev +http://www.openindex.io/en/webmasters/spider.html)
+GSLF
+Semrush/0.92
+lb-spider/Mozilla/5.0 Gecko/20100101 Firefox/10.0.2 (lb-spider http://www.linkbutler.de/spider spider@linkbutler.de)
+Google/2.1 (http://www.google.com/.html)
+salari/9.22 (Windows NT 6.0 U en)
+fast crawler beta 2.0 (+http://www.fast.de)
+Mozilla/5.0 (compatible Mail.RU/2.0)
+netEstate NE Crawler (+http://www.sengine.info/)
+Mozilla/5.0 (compatible Blekko ScoutJet +http://blekko.com/about/blekko)
+mahonie neofonie search:ro/search:ro/0.0.1 (This is the MIA  - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de http://spider.neofonie.de spider@neofonie.de)
+EventMachine HttpClient
+Mozilla/5.0 (compatible MJ12/v1.4.3 http://www.majestic12.co.uk/.php?+)
+EMail Exractor
+WatchMouse/22330 (http://watchmouse.com/  nlams02.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  decgn01.watchmouse.net)
+WatchMouse/21880 (http://watchmouse.com/  oldgab)
+WatchMouse/22330 (http://watchmouse.com/  sesto01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  cavan01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  gblon01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  nlams01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  itpda01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  hkhkg01.watchmouse.net)
+WatchMouse/22330 (http://watchmouse.com/  usaus01.watchmouse.net)
+Python-urllib/2.6
+Mozilla/5.0 (compatible OpenindexDeepSpider/Nutch-1.5-dev +http://www.openindex.io/en/webmasters/spider.html)
+Mozilla/5.0 (compatible lt/1.3 @language-tools.com)
+Mozilla/3.0 (compatible Indy Library)
+facebookexternalhit_1.1 (+http:__www.facebook.com_externalhit_uatext.php)
+index.html
+Pixray-Seeker/1.1 (Pixray-Seeker http://www.pixray.com/pixray crawler@pixray.com)
+SinaWeibo
+Showyou (http://showyou.com/crawler)
+Twitter/1.0
+Mozilla/5.0 (compatible PaperLi/2.1 http://support.paper.li/entries/20023257-what-is-paper-li)
+Apache-HttpClient/4.1 (java 1.5)
+news.me extractor
+Buffer
+Mozilla/5.0 (compatible Linter/1.0)
+LinkedIn/1.0 (compatible Mozilla/5.0 Jakarta Commons-HttpClient/3.1 +http://www.linkedin.com)
+Mozilla/5.0 (compatible) Feedfetcher-Google(+http://www.google.com/feedfetcher.html)
+Mozilla/5.0 (compatible Rivva http://rivva.de)
+Summify (Summify/1.0.1 +http://summify.com)
+percspider <ops@percolate.com>
+Mozilla/5.0 (compatible muso/1.0 info@muso.com +http://www.muso.com)
+Wotbox/2.0 (@wotbox.com http://www.wotbox.com)
+Mozilla/5.0 (compatible Ahrefs/3.1 +http://ahrefs.com/ro/)
+GG Peek 1.0 ( http://gg.pl/ http://info.gadu-gadu.pl/praca )
+sGroup crawler 1/Nutch-1.3
+Mozilla/5.0 (compatible WebNL +http://www.web.nl/webmasters/spider.html helpdesk@web.nl)
+LinksCrawler 0.1beta
+W3C_Validator/1.3
+Mozilla/5.0 (Windows U Windows NT 5.1 zh-CN rv:1.8.0.11) Gecko/20070312 Firefox/1.5.0.11 360Spider
+Java HTTP Helper V0.1 Java/1.7.0_05
+MAZCHAOLEEMozilla/5.0 (X11 Linux x86_64) AppleWebKit/534.24 (KHTML like Gecko Google Web Preview) Chrome/11.0.696 Safari/534.24_19-082912amzchaoleeeeeeeeeeeeex
+Mozilla/5.0 (compatible Unister crawler@unister.de)
+Mozilla/5.0 (compatible Infohelfer/1.3.0 +http://www.infohelfer.de/crawler.php)
+HD nutch agent/Nutch-1.1 (Think)
+HTMLParser/2.0
+Mozilla/5.0 (compatible o/2.3.1 +http://filterdb.iss.net/crawler/)
+drupact/0.7 http://www.arocom.de/drupact
+Wotbox/2.01 (+http://www.wotbox.com//)
+MIA DEV/search:ro/0.0.1 (This is the MIA  - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de http://spider.neofonie.de spider@neofonie.de)
+RapidMiner
+Python-urllib/2.7
+Mozilla/5.0 (compatible archive.org_ +http://www.archive.org/details/archive.org_)
+Yandex/1.01.001 (compatible Win16 H)
+Mozilla/5.0 (compatible Mail.RU_/2.0)
+AsyncHttpClient/1.0 (NettyAsyncHttpProvider - Linux - 2.6.32-5-amd64 - 1.6.0_18 - 8 core(s))
+Wget/1.14 (linux-gnu)
+AwesomeSpider Java/1.6.0_37
+Mozilla/5.0 (compatible Infohelfer/1.3.3 +http://www.infohelfer.de/crawler.php)
+Mozilla/5.0 (compatible Ahrefs/4.0 +http://ahrefs.com/ro/)
+Yahoo Slurp
+Ruby
+Pixray-Seeker/2.0 (Pixray-Seeker +http://www.pixray.com/pixray +crawler@pixray.com)
+PHP/5.2.10
+MIA DEV/search:ro/0.0.1 (MIA  for research project MIA (www.MIA-marktplatz.de) http://spider.neofonie.de spider-l@neofonie.de)
+browser/2.0 CFNetwork/548.1.4 Darwin/11.0.0
+Mozilla/5.0 (compatible 008/0.85 http://www.80legs.com/webcrawler.html) Gecko/2008032620
+Mozilla/5.0 (compatible Mail.RU_/2.0 +http://go.mail.ru/help/ros)
+Mozilla/5.0 (compatible Plukkie/1.5 http://www.je.com/plukkie.htm)
+Java/1.7.0_10
+crawl-66-249-66-1.google.com
+FeedFetcher-Google ( http://www.google.com/feedfetcher.html)
+lwp-trivial/1.35
+Wget/ (linux-gnu)
+TosCrawler/Nutch-1.6 (http://www.toshiba.co.jp/rdc/about/crawl_info_en.htm 'Rdc-crawler at ml dot toshiba dot co dot jp')
+curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2
+Wget/1.11.4 Red Hat modified
+Solomono/1.04 (http://www.solomono.ru)
+Mozilla/5.0 (compatible Dataprovider Site Explorer http://www.dataprovider.com/)
+OpenWebIndex/Nutch-1.6
+it2media-domain-crawler/1.0 on crawler-prod.it2media.de
+Mozilla/5.0 (compatible CompSpy/1.0 +http://www.compspy.com/spider.html)
+InboundScore/Nutch-1.4 (http://InboundScore.com/)
+Java/1.6.0_22
+Java/1.7.0_17
+Java/1.6.0_25
+Mozilla/5.0 (Windows U Windows NT 5.1 zh-CN rv:1.8.0.11) Firefox/1.5.0.11 360Spider
+Java/1.7.0_13
+Aladin/3.324
+libwww-perl/6.05
+Gallent Search Spider v1.4 Ro 2 (http://ro.GallentSearch.com)
+Readability/4824a0 - http://readability.com/about/
+BacklinkCrawler V (http://www.backlinktest.com/crawler.html)
+HTTP_Request2/2.1.1 (http://pear.php.net/package/http_request2) PHP/5.3.2-1ubuntu4.18
+curl/7.22.0 (i686-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3
+curl/7.21.6 (i686-pc-linux-gnu) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3
+Mozilla/5.0 (Windows U Windows NT 5.1 en-US rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6 Ara.com.tr Ara 1.0
+curl/7.21.0 (x86_64-pc-linux-gnu) libcurl/7.21.0 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.15 libssh2/1.2.6
+coccoc/1.0 (http://help.coccoc.vn/)
+Mozilla/1.0 (compatible Google/2.1 +http://www.google.com/.html)
+EXARP 0.6b (HTTP://UNNEX.DE)
+Mozilla/5.0 (compatible Acoon/4.11.1 +http://www.acoon.de/ro.asp)
+Mozilla/5.0 (Unknown Linux x86_64) AppleWebKit/534.34 (KHTML like Gecko) PhantomJS/1.9.0 Safari/534.34
+Mozilla/5.0 (compatible Semrush/0.96.3 +http://www.semrush.com/.html)
+Apache-HttpClient/4.2.3 (java 1.5)
+Mozilla/5.0 (compatible Spiderlytics/1.0 +spider@spiderlytics.com)
+Mozilla/5.0 (compatible SpiderLing (a SPIDER for LINGustic research) http://nlp.fi.muni.cz/projects/biwec/)
+curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.14.0.0 zlib/1.2.3 libidn/1.18 libssh2/1.4.2
+Yahoo Pipes 1.0
+Yahoo Pipes 2.0
+Apache-HttpClient/4.2.2 (java 1.5)
+Mozilla/5.0 (compatible Acoon/4.12.1 +http://www.acoon.de/ro.asp)
+Mozilla/5.0 (Unknown Linux x86_64) AppleWebKit/534.34 (KHTML like Gecko) PhantomJS/1.8.1 Safari/534.34
+Mozilla/5.0 (compatibleYodao-Image/1.0http://www.youdao.com/help/webmaster/spider/)
+fin
+Mozilla/5.0 (compatible Ahrefs/5.0 +http://ahrefs.com/ro/)
+Mozilla/5.0 (compatible Istella/1.10.2 +http://www.tiscali.it/)
+Mozilla/5.0 (compatible heritrix/3.1.1 UniLeipzigASV +https://asv.informatik.uni-leipzig.de/)
+Mozilla/5.0 (compatible Solomono/1.05 +http://www.solomono.ru)
+Screener Crawler Beta 2.0 (+http://www.Screener.com)
+Mozilla/5.0 (compatible vkShare +http://vk.com/dev/Share)
+Mozilla/5.0 (compatible MJ12/v1.4.4 http://www.majestic12.co.uk/.php?+)
+Mozilla/5.0 (compatible Semrush/0.97 +http://www.semrush.com/.html)
+W3C_Validator/1.3 http://validator.w3.org/services
+Mozilla/5.0 (compatible Linux x86_64 Mail.RU_/2.0 +http://go.mail.ru/help/ros)
+Express WebPictures (www.express-soft.com)
+Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)
+Wget/1.13.4 (linux-gnu)
+BUbiNG (+http://law.di.unimi.it/BUbiNG.html)
+infohelfer/0.9 (http://www.infohelfer.de/)
+Mozilla/5.0 (Windows NT 6.1 rv:6.0) Gecko/20110814 Firefox/6.0 Google (+https://developers.google.com/+/web/snippet/)
+Mozilla/5.0 (compatible proximic +http://www.proximic.com/info/spider.php)
+Scrapy/0.18.4 (+http://scrapy.org)
+Mozilla/5.0 (compatible SEOkicks-Ro +http://www.seokicks.de/ro.html)
+lftp/4.4.11
+curl/7.19.0 (x86_64-suse-linux-gnu) libcurl/7.19.0 OpenSSL/0.9.8h zlib/1.2.3 libidn/1.10
+Mozilla/5.0 (compatible sp/4.0.4 +http://www.seoprofiler.com/ )
+Mozilla/5.0 (compatible Ezooms/1.0 help@moz.com)
+Mozilla/5.0 (compatible GrapeshotCrawler/2.0 +http://www.grapeshot.co.uk/crawler.php)
+PHP/5.4.23
+Mozilla/5.0 (compatible waybackarchive.org/1.0 +spider@waybackarchive.org)
+Snoopy v1.2.4
+Mozilla/5.0 (compatible Linkpad/1.06 +http://www.linkpad.ru)
+Wget/1.15 (linux-gnu)
+Mozilla/5.0 (compatible Seznam/3.2 +http://fulltext.sblog.cz/)
+Mozilla/5.0 (compatible Lipperhey SEO Service http://www.lipperhey.com/)
+Mozilla/5.0 (compatible Mojeek/0.6 http://www.mojeek.com/.html)
+PHP/5.3.23
+Mozilla/5.0 (compatible URLAppend/1.0 +http://www.profound.net/urlappend.html)
+Mozilla/5.0 (compatible Dot/1.1 http://www.opensiteexplorer.org/dot help@moz.com)
+Scrapy/0.22.2 (+http://scrapy.org)
+Mozilla/5.0 (compatible uM-FC/1.0 mailto: crawling@ubermetrics-technologies.com)
+Mozilla/5.0 (compatible LoadTime/0.9 +http://www.loadtime.net/.html)
+Mozilla/5.0 (compatible MJ12/v1.4.5 http://www.majestic12.co.uk/.php?+)
+Mozilla/5.0 (X11 U Linux x86_64 de rv:1.9.1.16) Gecko/20121207 Firefox/25.0 (http://variohost24.de)
+Mozilla/5.0 (X11 U Linux x86_64 de rv:1.9.1.16) Gecko/20121207 Firefox/29.0 (http://variohost24.de)
+Mozilla/5.0 (X11 Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko Google Web Preview) Chrome/27.0.1453 Safari/537.36
+Mozilla/5.0 (compatible memory/1.20.33 +http://archivethe.net/en/index.php/about/internet_memory1 on behalf of DNB)
+Mozilla/5.0 (X11 Linux x86_64) AppleWebKit/537.36 (KHTML like Gecko Google Page Speed Insights) Chrome/27.0.1453 Safari/537.36
+Mozilla/5.0 (compatible memory/1.20.71 +http://archivethe.net/en/index.php/about/internet_memory1 on behalf of DNB)
+Mozilla/5.0 (X11 U Linux i686 en-US rv:1.9.2.17) Gecko/20110515 HeartRails_Capture/1.0.4 (+http://capture.heartrails.com/) Namoroka/3.6.17
+niki-
+Mozilla/5.0 (compatible coccoc/1.0 +http://help.coccoc.com/)
+Xenu Link Sleuth/1.3.8
+ThumbSniper (http://thumbsniper.com)
+Mozilla/5.0 (compatible Istella/1.18.81 +http://www.tiscali.it/)
+Mozilla/5.0 (compatible 007ac9 Crawler http://crawler.007ac9.net/)
+Mozilla/5.0 (compatible publiclibraryarchive.org/1.0 +crawl@publiclibraryarchive.org)
+Cliqz/0.1 (+http://cliqz.com/company/cliqz)
+Science Traveller International 1X/1.0
+yacy (/global amd64 Windows Server 2008 R2 6.1 java 1.7.0_25 Europe/en) http://yacy.net/.html
+LinkStats
+stq_ (+http://www.searchteq.de)
+curl/7.35.0
+Mozilla/5.0 (compatibleMixrank crawler@mixrank.com)
+madaali.de (Version: 1.06 powered by www.madaali.de +http://www.madaali.de/pfadzurseite/.html)
+Mozilla/5.0 (compatibleOptimizationCrawler/0.2+http://www.domainoptima.com/ro)
