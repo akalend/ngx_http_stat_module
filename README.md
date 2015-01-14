@@ -8,13 +8,13 @@ The ad networks require accounting of data. The information from cookies and par
 
 This project have files:
 
-drwxr-xr-x   conf			- the directory with example config files
--rw-r--r--   config			- file for configuration of addon
-drwxr-xr-x   html			- the some test files
-drwxrwxrwx   server 			- the source of daemon framework is the server directory
--rw-r--r--   LICENSE			- text of license
--rw-r--r--   ngx_http_stat_module.c 	- source of module
--rw-r--r--   README.md 			- this file
+	drwxr-xr-x   conf			- the directory with example config files
+	-rw-r--r--   config			- file for configuration of addon
+	drwxr-xr-x   html			- the some test files
+	drwxrwxrwx   server 			- the source of daemon framework is the server directory
+	-rw-r--r--   LICENSE			- text of license
+	-rw-r--r--   ngx_http_stat_module.c 	- source of module
+	-rw-r--r--   README.md 			- this file
 
 
 # Configuration
