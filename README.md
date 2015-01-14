@@ -46,3 +46,21 @@ nginx.conf example:
             index  index.htm;
         }
     }
+
+
+The format structure is:
+
+	arg_xxx 	- get value of argument xxx from uri: http://myhost.com?xxx=123 
+	cook_abc 	- value of coockies abc
+	servername 	- value of server variable SERVERNAME
+	host,		- value of server variable   Host
+	time,		- time  of use in msec
+	referer,	- value of server HTTP Header : Referer
+	user_agent	- value of server HTTP Header : UserAgent
+	status		- code of status (200, 404, etc)
+
+
+
+
+
+
