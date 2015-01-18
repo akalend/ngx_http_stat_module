@@ -4,13 +4,11 @@
 
 #include "main.h"
 #include "parser.h"
-
+#include "udf.h"
 
 static f_cb cb_host;
 static f_cb cb_servername;
 static f_cb cb_time;
-static f_cb cb_args;
-static f_cb cb_cook;
 static f_cb cb_status;
 
 
@@ -21,7 +19,7 @@ int get_format_num(char* buf) {
 
 int stream_parse(char* buf, array_t* cb, f_udf udf ) {
 
-    stats_t stats;
+    user_stat_t stats;
     bzero(&stats, sizeof(stats));
 
         udp_header_t* pheader = (udp_header_t*)buf;
@@ -41,7 +39,7 @@ int stream_parse(char* buf, array_t* cb, f_udf udf ) {
             printf("sb [%d] pos=%d \n", i, sb->pos);
             u_char* p = (u_char*)sb; 
             
-            cb[i].cb(&stats, sb->data, sb->pos );
+            cb[i].cb((stats_t*)  &stats, sb->data, sb->pos );
 
             p += sb->pos+1;
             sb = (stat_buf_t*)p;
@@ -131,47 +129,24 @@ array_t* parse_format(const char* format) {
 }
 
 //define F_PARMS stats_t* st,  char* arg, int arg_len
-
 static void cb_host (F_PARMS){
-    printf("---------- %s  ---------------\n", __FUNCTION__);
-
     st->host = strndup(arg, arg_len);
-    printf("%s\n",  st->host );
 }
 
 
 static void cb_servername (F_PARMS){
-    printf("---------- %s  ---------------\n", __FUNCTION__);
+    // printf("---------- %s  ---------------\n", __FUNCTION__);
    st->servername = strndup(arg, arg_len);
-    printf("%s\n",  st->servername );
+    // printf("%s\n",  st->servername );
 }
 
+
 static void cb_status (F_PARMS){
-    printf("---------- %s  ---------------\n", __FUNCTION__);
-
     int16_t *status = (int16_t *) arg; 
-
-    printf("status code=%d\n", *status);
-
 }
 
 
 static void cb_time (F_PARMS){
-    printf("---------- cb_time   ---------------\n");
-
     float *exe_time = (float*) arg; 
-
-    printf("%f\n", *exe_time);
-}
-
-static void cb_args (F_PARMS){
-    printf("---------- %s  ---------------\n", __FUNCTION__);
-    printf("len=%d arg=%s\n", arg_len,arg);
-}
-
-static void cb_cook (F_PARMS){
-    printf("---------- %s  ---------------\n", __FUNCTION__);
-
-    printf("len=%d arg=%s\n", arg_len,arg);
 }
 

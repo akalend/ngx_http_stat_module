@@ -31,6 +31,7 @@ stat_log_format [ number  "list of parms"];  number and structure data to be sen
 
 nginx.conf example: 
 
+
     server {
         listen       80;
         server_name  localhost;
@@ -62,5 +63,88 @@ The format structure is:
 
 
 
+# Protocol
+
+The atoms of representation in the protocol include:
+	int8 - a single 8-bit byte (i.e. an octet)
+	int32 - a 32-bit integer in little-endian format (Intel x86)
+	int64 - a 64-bit integer in little-endian format (Intel x86)
+
+HTTP server (ngx_http_stat_module) sent stats packet to stats server. The response is absent.
+
+        uint8_t     format_num;     // number of format
+        uint8_t     el_count;       // count of elementst
+        uint16_t    lenght;         // lenght of body
+        uint32_t    timestamp;      // timestamp
+
+
+<packet> ::= <header><body>
+
+<header> ::= <format_num><el_count><body_lenght><timestamp>
+
+<format_num> ::= <int8>
+<format_num> represents a format number, first parameter from directive "stat_log_format" of nginx.conf
+
+<el_count>  ::= <int8>
+<el_count> represents a count of elements (tuples) from second parameter from directive "stat_log_format" of nginx.conf
+
+<el_count>  ::= <int16>
+<el_count> represents a lenght of body in bytes
+
+<timestamp>  ::= <int32>
+<timestamp> is a current timestamp in unix time
+
+<body> ::= <tuple>+
+A body that represents a set of tuples. Count of tuples represents in the field <el_count>. The order of tuples must be coordinate (cоответствовать) the order of field from the directive "stat_log_format" of nginx.conf. 
+
+<tuple> ::= <value_len><value>
+A tuple that represents a some data.
+
+<value_len> ::= <int8>
+<value_len> represents a lenght of tuple value
+
+<value> :: <int8>+
+represents a stream of byte of tuple value
+
+
+
+# Server
+
+Server is daemon, wich receive data from nginx. The server is framework. User must define UDF (user defined function) and some callbacks function,
+
+
+
+# Server configuration file
+
+The server configuration file have structure of ini-files. The two main section: "daemon" and "format". The "daemon" section describe daemon parameters as listening address, is demon enabled, username, pid filename and etc.
+
+
+	; This is an INI file
+	[daemon]  ; daemon section
+
+	logfile = error.log								; to syslog
+
+	listen = 127.0.0.1:5555 						; lisen ip:port format [host:port]
+	daemon = 1
+	username = nobody
+
+	pidfile = /tmp/stat_server.pid
+
+
+The "format" section describe formats of received messages. This section have parameter "count". It is count of formats. So any format have parameter "number" and "format":
+
+	[format] 		; format section
+	
+	count = 2 		; count of formats
+
+	number = 1
+	format = servername,host,status,time,arg_server_id,cook_TestRoot,arg_pos,arg_user_id
+
+	number = 2
+	format = servername,host,status,cook_TestRoot,arg_pos
+
+The "format" and "number" parameters must consist parameter "stat_log_format" from nginx.conf.
+
+	stat_log_format 1 "servername,host,status,time,arg_server_id,cook_TestRoot,arg_pos,arg_user_id";
 
 

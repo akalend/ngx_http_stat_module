@@ -32,17 +32,20 @@ typedef struct {
         } value;
 } tuple_t;
 
+/* shared by all watchers */
+#define ST_SERVER											\
+        uint32_t    timestamp;  /* timestamp */ 			\
+        uint32_t    status; 	/* HTTP response status */ 	\
+        char*       host;		/* host*/					\
+        char*       servername; /* servername */			\
+        float       exe_time;   /* execute scrit time */	\
+        uint32_t    tuple_count; /* count of tuple */		\
+        tuple_t*    tuples; 	 /*array of tuples 	*/
+
+
 typedef struct {
-        uint32_t    timestamp;      // timestamp
-        uint32_t    status;         // HTTP response status
-
-        char*       host;           // host
-        char*       servername;     // servername
-
-        float       exe_time;       // execute scrit time
-        uint32_t    tuple_count;    // count of tuple
-
-        tuple_t*    tuples;         // array of tuples
+		ST_SERVER
+        char 		data[];			// user defined data
 } stats_t;
 
 #define F_PARMS stats_t* st,  char* arg, int arg_len

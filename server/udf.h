@@ -3,6 +3,15 @@
 
 #include "main.h"
 
+f_cb cb_args;
+f_cb cb_cook;
+
+
+typedef struct {
+	ST_SERVER
+	int pos;		// some user data field
+	int user_id;	// some user data field
+} user_stat_t;
 
 
 
