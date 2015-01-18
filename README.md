@@ -78,33 +78,33 @@ HTTP server (ngx_http_stat_module) sent stats packet to stats server. The respon
         uint32_t    timestamp;      // timestamp
 
 
-<packet> ::= <header><body>
+	<packet> ::= <header><body>
 
-<header> ::= <format_num><el_count><body_lenght><timestamp>
+	<header> ::= <format_num><el_count><body_lenght><timestamp>
 
-<format_num> ::= <int8>
-<format_num> represents a format number, first parameter from directive "stat_log_format" of nginx.conf
+	<format_num> ::= <int8>
+	<format_num> represents a format number, first parameter from directive "stat_log_format" of nginx.conf
 
-<el_count>  ::= <int8>
-<el_count> represents a count of elements (tuples) from second parameter from directive "stat_log_format" of nginx.conf
+	<el_count>  ::= <int8>
+	<el_count> represents a count of elements (tuples) from second parameter from directive "stat_log_format" of nginx.conf
 
-<el_count>  ::= <int16>
-<el_count> represents a lenght of body in bytes
+	<el_count>  ::= <int16>
+	<el_count> represents a lenght of body in bytes
 
-<timestamp>  ::= <int32>
-<timestamp> is a current timestamp in unix time
+	<timestamp>  ::= <int32>
+	<timestamp> is a current timestamp in unix time
 
-<body> ::= <tuple>+
-A body that represents a set of tuples. Count of tuples represents in the field <el_count>. The order of tuples must be coordinate (cоответствовать) the order of field from the directive "stat_log_format" of nginx.conf. 
+	<body> ::= <tuple>+
+	A body that represents a set of tuples. Count of tuples represents in the field <el_count>. The order of tuples must be coordinate (cоответствовать) the order of field from the directive "stat_log_format" of nginx.conf. 
 
-<tuple> ::= <value_len><value>
-A tuple that represents a some data.
+	<tuple> ::= <value_len><value>
+	A tuple that represents a some data.
 
-<value_len> ::= <int8>
-<value_len> represents a lenght of tuple value
+	<value_len> ::= <int8>
+	<value_len> represents a lenght of tuple value
 
-<value> :: <int8>+
-represents a stream of byte of tuple value
+	<value> :: <int8>+
+	represents a stream of byte of tuple value
 
 
 
@@ -116,7 +116,7 @@ Server is daemon, wich receive data from nginx. The server is framework. User mu
 
 # Server configuration file
 
-The server configuration file have structure of ini-files. The two main section: "daemon" and "format". The "daemon" section describe daemon parameters as listening address, is demon enabled, username, pid filename and etc.
+The server configuration file have structure of ini-files: https://github.com/akalend/ngx_http_stat_module/blob/master/server/conf.ini. The two main section: "daemon" and "format". The "daemon" section describe daemon parameters as listening address, is demon enabled, username, pid filename and etc.
 
 
 	; This is an INI file
