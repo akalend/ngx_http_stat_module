@@ -66,16 +66,14 @@ The format structure is:
 # Protocol
 
 The atoms of representation in the protocol include:
+
 	int8 - a single 8-bit byte (i.e. an octet)
+	
 	int32 - a 32-bit integer in little-endian format (Intel x86)
+	
 	int64 - a 64-bit integer in little-endian format (Intel x86)
 
-HTTP server (ngx_http_stat_module) sent stats packet to stats server. The response is absent.
-
-        uint8_t     format_num;     // number of format
-        uint8_t     el_count;       // count of elementst
-        uint16_t    lenght;         // lenght of body
-        uint32_t    timestamp;      // timestamp
+	HTTP server (ngx_http_stat_module) sent stats packet to stats server. The response is absent.
 
 
 	<packet> ::= <header><body>
