@@ -38,12 +38,25 @@ stats_ua_botlist_file ua_botlist.txt; имя файла конфигурации
 
 Протокол общения с UDP сервером (stats_collector):
 
-[Header, Body]
+	[Header, Body]
+	пакет состоит из Заголовка и Тела сообщения. 
 
-Header = [timestamp int_32, num_format int_8, elm_count int_8, body_lenght int_16  ]
-Body = [element, element, element, ...]
-element = [len int_8, data ]		- элемент данных, из строки stat_log_format 
-data = [byte, byte, byte, byte, ...] 
-byte uchar;
+	Header = [timestamp int_32, num_format int_8, elm_count int_8, body_lenght int_16  ]
+	Заголовок имеет поля: timestamp, num_format, elm_count, body_lenght
 
-timestamp - время выполнения запроса
+	timestamp 	- время отправления пакета
+	num_format 	- номер формата сообщения
+	elm_count 	- кол-во тэлемегнтов в теле сообщения
+	body_lenght	- длина тела сообщения
+
+
+	Body = [element, element, element, ...]
+	Тело сообщения состоит из множества элементов формата сообщения
+
+	element = [len int_8, data ]		- элемент данных, из строки stat_log_format 
+	Элемент данных состоит из поля длинны элемента и непосредственно данных, длинны len байт:
+
+	data = [byte, byte, byte, byte, ...] 
+
+	byte uchar;
+
