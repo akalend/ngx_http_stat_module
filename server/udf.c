@@ -12,11 +12,17 @@
 int user_function(void* in, void* out) {
 
 
-	user_local_t*  stats = (user_local_t*) in;
-
+	user_local_t* local_stats = (user_local_t*) in;
 	user_info_t*  user_info = (user_info_t*) out;
 
+	/* processing some user data */
 
+	if (local_stats->user_id == 1)
+		user_info->count_user_1 ++;
+	else if (local_stats->user_id == 2)
+		user_info->count_user_2 ++;
+	else
+		printf("unused user_id=%d\n", local_stats->user_id);
 	printf("call %s\n", __FUNCTION__);
 	return OK;
 }
