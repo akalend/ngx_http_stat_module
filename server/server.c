@@ -282,10 +282,10 @@ int main(int argc, char** argv )
         printf("get format_num = %d  save in %s len=%d\n",format_num, filename,recv_len);
     
         stream_parse(buf, server_ctx.cb[format_num-1], user_function );
-
-
     }
  
+    get_info();
+    
     if ( udp_addr.a_addr ) free(udp_addr.a_addr);
     close(udp_sock);
 

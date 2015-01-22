@@ -11,7 +11,7 @@ static f_cb cb_servername;
 static f_cb cb_time;
 static f_cb cb_status;
 
-static user_info_t* user_info;
+static user_info_t user_info;
 
 int get_format_num(char* buf) {
 	udp_header_t* pheader = (udp_header_t*)buf;
@@ -40,16 +40,19 @@ int stream_parse(char* buf, array_t* cb, f_udf udf ) {
             printf("sb [%d] pos=%d \n", i, sb->pos);
             u_char* p = (u_char*)sb; 
             
-            cb[i].cb((user_local_t*)  &stats, sb->data, sb->pos );
+            cb[i].cb( (stats_t*) &stats, sb->data, sb->pos );
 
             p += sb->pos+1;
             sb = (stat_buf_t*)p;
         }
 
     udf( &stats, &user_info);
-
-
 }
+
+user_info_t* get_info() {
+    return &user_info;
+}
+
 
 array_t* parse_format(const char* format) {
     
