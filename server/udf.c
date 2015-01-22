@@ -24,7 +24,12 @@ void cb_args (F_PARMS){
 
     if ( strncmp(arg,"pos", arg_len) == OK ) {
     	stats->pos = atoi(arg);
+    } else ( strncmp(arg,"user_id", arg_len) == OK ){
+		stats->user_id = atoi(arg);
+    } else {
+    	    printf("unused args=%s\n", arg);
     }
+
 
 }
 
