@@ -16,6 +16,9 @@ int user_function(void* in, void* out) {
 }
 
 void cb_args (F_PARMS){
+
+	user_stat_t*  stats = (user_stat_t*) st;
+
     printf("---------- %s  ---------------\n", __FUNCTION__);
     printf("len=%d arg=%s\n", arg_len,arg);
 

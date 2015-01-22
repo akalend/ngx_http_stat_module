@@ -1,3 +1,6 @@
+#include <string.h>
+#include <stdlib.h>
+
 #include "ini.h"
 #include "main.h"
 #include "parser.h"
