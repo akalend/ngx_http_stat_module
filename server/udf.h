@@ -11,7 +11,14 @@ typedef struct {
 	ST_SERVER
 	int pos;		// some user data field
 	int user_id;	// some user data field
-} user_stat_t;
+} user_local_t;
+
+typedef struct {
+	int count_user_1;		// some user data field
+	int count_user_2;		// some user data field
+} user_info_t;
+
+
 
 
 
