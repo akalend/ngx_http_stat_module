@@ -1,5 +1,7 @@
 # ngx_http_stat_module
-The ngx_http_stat_module is addon for nginx HTTP server. The addon send some user data to stat daemon by UDP. The stat daemon collection, accumulation and processing statistics. This project using for adv partner-billing systems. 
+The ngx_http_stat_module is addon for nginx HTTP server. This is a high-performance nginx module for logging some http requests via UDP into stats daemon.
+The stat daemon collection, accumulation and processing statistics. This project using for adv partner-billing systems. 
+Smooth integration of this module with nginx server gives the best performance possible.
 
 # Introduction
 
