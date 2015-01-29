@@ -3,6 +3,8 @@ The ngx_http_stat_module is addon for nginx HTTP server. This is a high-performa
 The stat daemon collection, accumulation and processing statistics. This project using for adv partner-billing systems. 
 Smooth integration of this module with nginx server gives the best performance possible.
 
+ATTENTION! it is alpha version.
+
 # Introduction
 
 The ad networks require accounting of data. The information from cookies and part url as GET parameter identify the users, clicks, partners and banners. This information send by binary UDP protocol to statistic daemon. The statistic daemon collection, accumulation, processing and agregation information save to database.
