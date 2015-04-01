@@ -135,7 +135,12 @@ The server configuration file have structure of ini-files: https://github.com/ak
 	ip2city_file = /etc/some_data/net_city.txt   ; if use ip to city file
 
 
-ip2city file has csv format: city_id, min_ip, max_ip. The gzip file for Russian Federation in the folder "db"
+ip2city file has csv format: 
+	
+	city_id, min_ip, max_ip. 
+
+
+The gzip file for Russian Federation in the folder "db"
 
 
 The "format" section describe formats of received messages. This section have parameter "count". It is count of formats. So any format have parameter "number" and "format":
@@ -157,7 +162,7 @@ The "format" and "number" parameters must consist parameter "stat_log_format" fr
 
 ### Dependense
 
-The stats Server for the analysis of statistics of use are to the libdict: https://github.com/fmela/libdict
+The stats Server for the analysis of statistics of use are the libdict: https://github.com/fmela/libdict
 
 
 
