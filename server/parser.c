@@ -49,7 +49,7 @@ int stream_parse(char* buf, array_t* cb, f_udf udf ) {
     udf( &stats, &user_info);
 }
 
-    user_info_t* get_info() {
+user_info_t* get_info() {
         
     return &user_info;
 }
