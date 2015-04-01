@@ -84,6 +84,7 @@ static void ngx_http_stat_cb_arg(udp_stream_t*, ngx_http_request_t*, ngx_str_t*)
 static void ngx_http_stat_cb_referer(udp_stream_t*, ngx_http_request_t*, ngx_str_t*);
 static void ngx_http_stat_cb_cookie(udp_stream_t*, ngx_http_request_t*, ngx_str_t*);
 static void ngx_http_stat_cb_status(udp_stream_t*, ngx_http_request_t*, ngx_str_t*);
+static void ngx_http_stat_cb_remotehost(udp_stream_t*, ngx_http_request_t*, ngx_str_t*);
 
 
 ngx_int_t ngx_udp_connect(ngx_udp_connection_t *uc);
@@ -158,10 +159,6 @@ ngx_module_t ngx_http_stat_module = {
 };
 
 
-
-// r->connection->addr_text.   REMOTE_HOST
-//  sin = (struct sockaddr_in *) r->connection->sockaddr;
-//  v->data = (u_char *) &sin->sin_addr;
 
 ngx_int_t ngx_http_stat_handler(ngx_http_request_t *r) 
 {
@@ -358,6 +355,26 @@ ngx_http_stat_cb_host(udp_stream_t* buf, ngx_http_request_t *r, ngx_str_t *arg) 
 
     (void) ngx_write_console(ngx_stderr, "--------------        host  -----------------\n", 42);
     ngx_log_debug2(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "p=%s len=%d", p->data, p->len );
+}
+
+
+static void 
+ngx_http_stat_cb_remotehost(udp_stream_t* buf, ngx_http_request_t *r, ngx_str_t *arg) {
+
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "call %s", __FUNCTION__ );
+    ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "REMOTE_HOST %s", r->connection->addr_text.data );
+  
+    // r->connection->addr_text.   REMOTE_HOST
+    struct sockaddr_in *  sin = (struct sockaddr_in *) r->connection->sockaddr;
+
+    stat_buf_t* p = (stat_buf_t*)(buf->data + buf->lenght);  
+    buf->lenght =  buf->lenght + 5; 
+
+    p->len = (uint8_t) 4;
+    ngx_memcpy(p->data, (u_char *) &sin->sin_addr, p->len);
+
+    (void) ngx_write_console(ngx_stderr, "--------------   remote host  -----------------\n", 45);
+    ngx_log_debug4(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "p=%d.%d.%d.%d", p->data[0], p->data[1], p->data[2], p->data[3] );
 }
 
 static void 
@@ -663,6 +680,11 @@ ngx_http_stat_set_string_format (ngx_conf_t* cf, ngx_command_t* cmd, void* conf)
 		    ngx_log_error(NGX_LOG_ERR, cf->log, 0, "set '%s'", p);
 			p += sizeof("servername");
 			el->cb = ngx_http_stat_cb_servername;
+
+        } else if (ngx_strncmp(p, "remote_host", 11) == 0) { // $remote_host
+            ngx_log_error(NGX_LOG_ERR, cf->log, 0, "set '%s'", p);
+            p += sizeof("remote_host");
+            el->cb = ngx_http_stat_cb_remotehost;
 
 		} else if (ngx_strncmp(p, "time", 4) == 0) { 		// $time
 		    ngx_log_error(NGX_LOG_ERR, cf->log, 0, "set '%s'", p);
