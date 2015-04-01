@@ -7,7 +7,7 @@
 #include <netinet/in.h>
 #include <sys/un.h>
 
-
+#include "dict.h"
 
 #ifndef FALSE
 #define FALSE   0
@@ -42,7 +42,6 @@ typedef struct {
         uint32_t    tuple_count; /* count of tuple */		\
         tuple_t*    tuples; 	 /*array of tuples 	*/
 
-
 typedef struct {
 		ST_SERVER
         char 		data[];			// user defined data
@@ -65,16 +64,17 @@ typedef struct {
 	char*			desc;	
 	} format_t;
 
-
 typedef struct {
 	char* 			logfile;
 	char* 			listen;
 	char* 			pidfile;
 	char * 			username;
+	char *			ip2city_file;
 	short 			is_demonize;	
 	int 			count;
 	format_t*		format;
 	array_t**		cb;
+	dict*			ip2city;
 } conf_t;
 
 

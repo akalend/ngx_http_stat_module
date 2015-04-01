@@ -8,7 +8,7 @@
 - время выполнения скрипта
 - серверные переменные: servername, host 
 - HTTP заголовки: Referer, User-agent
-
+- IP
 
 ### Configuration
 
@@ -31,7 +31,6 @@ stat_log_format  "servername,host,time,arg_xxx,cook_abc";  формат данн
 
 
 stats_ua_botlist_file ua_botlist.txt; имя файла конфигурации - списка ua ботнетов
-
 
 
 
@@ -60,3 +59,7 @@ stats_ua_botlist_file ua_botlist.txt; имя файла конфигурации
 
 	byte uchar;
 
+В демон обработчик добавлено определение города по IP, загрузка данных из файла, который указывается в конфигурационном файле.
+Формат данных csv файла: id_city, min_ip, max_ip
+
+Ведется ежедневная статистика.

@@ -158,6 +158,11 @@ ngx_module_t ngx_http_stat_module = {
 };
 
 
+
+// r->connection->addr_text.   REMOTE_HOST
+//  sin = (struct sockaddr_in *) r->connection->sockaddr;
+//  v->data = (u_char *) &sin->sin_addr;
+
 ngx_int_t ngx_http_stat_handler(ngx_http_request_t *r) 
 {
 	ngx_http_stat_loc_conf_t  *lcf;	
@@ -171,7 +176,7 @@ ngx_int_t ngx_http_stat_handler(ngx_http_request_t *r)
     if(!lcf->enable) return NGX_OK;
 
 
-    ngx_int_t res;
+    // ngx_int_t res;
     
 	cb_el_t* el = lcf->cb->elts;
 	ngx_uint_t i=0;
@@ -195,7 +200,7 @@ ngx_int_t ngx_http_stat_handler(ngx_http_request_t *r)
     // udp_stream->lenght = (uint16_t)buf->pos;
 
 
-	res = ngx_http_stat_udp_send(lcf->endpoint,(u_char*) pbuf, 
+	ngx_http_stat_udp_send(lcf->endpoint,(u_char*) pbuf, 
         udp_stream->lenght + 8);
 
   ngx_log_error(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "udp_stream sizeof=%d format_num=%d elts=%d time=%d", 
@@ -203,7 +208,7 @@ ngx_int_t ngx_http_stat_handler(ngx_http_request_t *r)
 
 
 
-	ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "send res:%s",  res == NGX_OK ? "OK" : "ERR" );
+	// ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "send res:%s",  res == NGX_OK ? "OK" : "ERR" );
 
 	return NGX_OK;
 }

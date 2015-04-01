@@ -132,13 +132,14 @@ array_t* parse_format(const char* format) {
 //define F_PARMS stats_t* st,  char* arg, int arg_len
 static void cb_host (F_PARMS){
     st->host = strndup(arg, arg_len);
+    printf("host=%s\n", st->host);
 }
 
 
 static void cb_servername (F_PARMS){
     // printf("---------- %s  ---------------\n", __FUNCTION__);
    st->servername = strndup(arg, arg_len);
-    // printf("%s\n",  st->servername );
+   printf("servername=%s\n",  st->servername );
 }
 
 

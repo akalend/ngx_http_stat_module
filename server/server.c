@@ -12,11 +12,12 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <pwd.h>
-
-
 #include <fcntl.h>
 
 #include <arpa/inet.h>
+
+#include "dict.h"
+
 
 #include "main.h" 
 #include "ini.h"
@@ -30,8 +31,24 @@
 
 #define CONFIG_FILENAME "conf.ini"
 
- 
-const char* stat_format = "servername,host,status,time,arg_server_id,cook_TestRoot,arg_pos,arg_user_id,cook_TestXxx";
+typedef struct {
+        uint32_t    min_ip;
+        uint32_t    max_ip;
+        int         city;
+    } ip_city;
+
+void
+
+key_val_free(void *key, void *data) {
+
+    if (data)   {
+        ip_city ip = *((ip_city*)data);
+        // printf("free data %u\t%u\n", ip.city, ip.max_ip );
+        free(data);
+    }
+}
+
+
 
 void die(char *s)
 {
@@ -213,6 +230,44 @@ init_addr( addr_t *addr, const char *astring) {
     return OK;
 }
 
+dict* load_ip2city(char* name) {
+    char p[32];
+
+    FILE* f = fopen(name,"r");
+    if (!f) {
+        return NULL;
+    }
+
+    dict* dict = wb_dict_new(dict_uint_cmp, key_val_free);
+
+    while((fgets(p,32,f)) != NULL) {
+        bool inserted = false;
+        ip_city ips;
+        ip_city *pdata;
+
+        sscanf(p, "%d\t%u\t%u", &ips.city, &ips.min_ip, &ips.max_ip);
+        
+        pdata = malloc(sizeof(ip_city));
+        if (!pdata) {
+            printf("can not allocate data\n");
+            break;
+        }
+        memcpy(pdata, &ips, sizeof(ip_city));
+
+        void **data_location = dict_insert(dict, pdata, &inserted); 
+        if (!inserted){
+            printf("can not insert data into tree\n");
+            break;
+        }
+ 
+        *data_location = pdata;
+    }
+
+    printf("load ip2city OK\n");
+
+    fclose(f);
+    return dict;        
+}
 
 static conf_t server_ctx;
 
@@ -243,6 +298,15 @@ int main(int argc, char** argv )
     }
     
     daemonize(server_ctx.is_demonize, server_ctx.pidfile, server_ctx.username);
+
+    server_ctx.ip2city = NULL;
+    if (server_ctx.ip2city_file) {
+        server_ctx.ip2city  = load_ip2city(server_ctx.ip2city_file);
+        if (!server_ctx.ip2city) {
+            free_config(&server_ctx);
+            die("error open ip2city file");
+        }
+    }
 
     init_addr(&udp_addr, server_ctx.listen);
 
@@ -291,6 +355,7 @@ int main(int argc, char** argv )
 
     free_config(&server_ctx);
     /// clean ctx_server
+
 
     return 0;
 }

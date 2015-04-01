@@ -23,24 +23,28 @@ int parser(void* pctx, const char* section, const char* name,
 			
 		if(strcmp("daemon", name)==0) {
 			sscanf(value,"%d",&tmp_int);
-			ctx->is_demonize = tmp_int;			
+			ctx->is_demonize = tmp_int;
 		}
 				
-		if(strcmp("logfile", name)==0) {			
+		if(strcmp("logfile", name)==0) {
 			ctx->logfile = strdup(value);
 		}
 		
-		if(strcmp("pidfile", name)==0) {			
+		if(strcmp("pidfile", name)==0) {
 			ctx->pidfile = strdup(value);
 		}
 		 
-		if(strcmp("listen", name)==0) {			
+		if(strcmp("listen", name)==0) {
 				ctx->listen = strdup(value);
 		}
 
-		if(strcmp("username", name)==0) {			
+		if(strcmp("username", name)==0) {
 			if (strcmp("any", value))
 				ctx->username = strdup(value);
+		}
+
+		if(strcmp("ip2city_file", name)==0) {
+				ctx->ip2city_file = strdup(value);
 		}
 
 
@@ -133,6 +137,15 @@ int free_config(conf_t *ctx) {
 		free(ctx->listen);
 		ctx->listen = NULL;}
 
+	if (ctx->ip2city_file)  {
+		free(ctx->ip2city_file);
+		ctx->ip2city_file = NULL;}
+
+	if (ctx->ip2city)  {
+		dict_free(ctx->ip2city);
+		ctx->ip2city = NULL;}
+
+
 	if (ctx->format) {
 		int i=0;
 		for (i=0; i < ctx->count; i++) {
@@ -156,6 +169,8 @@ int free_config(conf_t *ctx) {
 		}
 		free(ctx->cb);
 		ctx->cb = NULL;}
+
+
 }
 
 

@@ -128,6 +128,11 @@ The server configuration file have structure of ini-files: https://github.com/ak
 
 	pidfile = /tmp/stat_server.pid
 
+	ip2city_file = /etc/some_data/net_city.txt   ; if use ip to city file
+
+
+ip2city file has csv format: city_id, min_ip, max_ip. The gzip file for Russian Federation in the folder "db"
+
 
 The "format" section describe formats of received messages. This section have parameter "count". It is count of formats. So any format have parameter "number" and "format":
 
