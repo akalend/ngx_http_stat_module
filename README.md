@@ -138,6 +138,10 @@ The server configuration file have structure of ini-files: https://github.com/ak
 ip2city file has csv format: 
 	
 	city_id, min_ip, max_ip. 
+	
+	244	687921408	687921535
+	244	687996928	688007423
+	244	688007680	688011519
 
 
 The gzip file for Russian Federation in the folder "db"
