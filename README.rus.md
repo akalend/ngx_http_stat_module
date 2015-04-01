@@ -34,7 +34,6 @@ stats_ua_botlist_file ua_botlist.txt; имя файла конфигурации
 
 
 
-
 Протокол общения с UDP сервером (stats_collector):
 
 	[Header, Body]
@@ -63,3 +62,8 @@ stats_ua_botlist_file ua_botlist.txt; имя файла конфигурации
 Формат данных csv файла: id_city, min_ip, max_ip
 
 Ведется ежедневная статистика.
+
+
+### Зависимости
+
+В UDP сервере для аналитики  ip2city используется libdict https://github.com/fmela/libdict, продукт развивается 
