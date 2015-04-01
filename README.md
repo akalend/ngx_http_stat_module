@@ -155,9 +155,9 @@ The "format" and "number" parameters must consist parameter "stat_log_format" fr
 	stat_log_format 1 "servername,host,status,time,arg_server_id,cook_TestRoot,arg_pos,arg_user_id";
 
 
-### Dependension
+### Dependense
 
-The stats Server for analyses use the libdict: https://github.com/fmela/libdict
+The stats Server for the analysis of statistics of use are to the libdict: https://github.com/fmela/libdict
 
 
 
