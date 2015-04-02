@@ -52,6 +52,7 @@ typedef struct {
 typedef void (f_cb) (F_PARMS);
 
 typedef int (f_udf) (void*, void*);
+typedef int (f_init_udf) (void*);
 
 
 typedef struct {

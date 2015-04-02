@@ -3,17 +3,77 @@
 #include "udf.h"
 
 
+f_init_udf 	user_init_function;
+f_init_udf 	user_destroy_function;
+
+f_udf user_pre_cycle_function;
+f_udf user_post_cycle_function;
+
+
+static udf_module stat_module = {
+	user_init_function,							/*  user init function 		*/
+	user_destroy_function,						/*  user destroy function 	*/
+	user_pre_cycle_function,					/*  user pre cycle function */
+	user_post_cycle_function					/*  user post cycle function */
+};
+
+
+udf_module* udf_get_module() {
+	return &stat_module;
+}
+
+
+/**
+*  this is user defined function, 
+*  init hook: for user stats logic
+*
+*/
+int user_init_function(void* conf) {
+
+	printf("****hook: %s\n", __FUNCTION__);
+	return OK;
+}
+
+
+/**
+*  this is user defined function, 
+*  destroy hook: for user stats logic
+*
+*/
+int user_destroy_function(void* conf) {
+
+	printf("****hook: %s\n", __FUNCTION__);
+	return OK;
+}
+
+
+
+/**
+*  user defined function, 
+*  init cycle before parse streaming
+*
+*/
+int user_pre_cycle_function(void* in, void* out) {
+
+	printf("****hook: %s\n", __FUNCTION__);
+	return OK;
+}
+
+
 
 /**
 *  this is user defined function, 
 *  for realise user stats logic
 *
+*  after finish parse streaming cycle
 */
-int user_function(void* in, void* out) {
+int user_post_cycle_function(void* in, void* out) {
 
 
 	user_local_t* local_stats = (user_local_t*) in;
 	user_info_t*  user_info = (user_info_t*) out;
+
+	printf("****hook: %s\n", __FUNCTION__);
 
 	/* processing some user data */
 
@@ -25,7 +85,7 @@ int user_function(void* in, void* out) {
 		printf("unused user_id=%d\n", local_stats->user_id);
 	printf("call %s\n", __FUNCTION__);
 
-	uint8_t* ip = (uint8_t*) local_stats->remote_host;
+	// uint8_t* ip = (uint8_t*) local_stats->remote_host;
 	
 	printf("remote IP(%u)\n", local_stats->remote_host); // : %d.%d.%d.%d,ip[0], ip[1], ip[2], ip[3]
 

@@ -19,35 +19,40 @@ int get_format_num(char* buf) {
 	return pheader->format_num;
 }
 
-int stream_parse(char* buf, array_t* cb, f_udf udf ) {
+int stream_parse(char* buf, array_t* cb) {
 
     user_local_t stats;
     bzero(&stats, sizeof(stats));
 
-        udp_header_t* pheader = (udp_header_t*)buf;
+    udp_header_t* pheader = (udp_header_t*)buf;
 
         printf("header=%d el_count=%d len=%d time=%u\n",
             pheader->format_num, pheader->el_count, pheader->lenght, pheader->timestamp);
 
         // stat_buf_t* sb = (stat_buf_t*)(buf + sizeof(udp_header_t));
 
-        udp_stream_t* usb = (udp_stream_t*) buf;
+    udp_stream_t* usb = (udp_stream_t*) buf;
 
-        stat_buf_t* sb = (stat_buf_t*)usb->data;
+    stat_buf_t* sb = (stat_buf_t*)usb->data;
+    u_char* p = (u_char*)sb; 
+
+    udf_module* stat_module = udf_get_module();
+    stat_module->udf_pre_cycle(&stats, &user_info);
+
+
+    int i;
+    for(i=0; i < pheader->el_count; i++) {
+        printf("sb [%d] pos=%d \n", i, sb->pos);
         u_char* p = (u_char*)sb; 
+        
+        cb[i].cb( (stats_t*) &stats, sb->data, sb->pos );
 
-        int i;
-        for(i=0; i < pheader->el_count; i++) {
-            printf("sb [%d] pos=%d \n", i, sb->pos);
-            u_char* p = (u_char*)sb; 
-            
-            cb[i].cb( (stats_t*) &stats, sb->data, sb->pos );
+        p += sb->pos+1;
+        sb = (stat_buf_t*)p;
+    }
 
-            p += sb->pos+1;
-            sb = (stat_buf_t*)p;
-        }
+    stat_module->udf_post_cycle(&stats, &user_info);
 
-    udf( &stats, &user_info);
 }
 
 user_info_t* get_info() {

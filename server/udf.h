@@ -19,9 +19,14 @@ typedef struct {
 } user_info_t;
 
 
+typedef struct  {
+	f_init_udf* udf_init;
+	f_init_udf* udf_destroy;
+	f_udf* udf_pre_cycle;
+	f_udf* udf_post_cycle;
+} udf_module;
 
+udf_module* udf_get_module();
 
-
-int user_function(void* in, void* out);
 
 #endif /*  _UDF_H */
