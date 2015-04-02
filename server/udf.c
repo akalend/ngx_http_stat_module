@@ -24,6 +24,12 @@ int user_function(void* in, void* out) {
 	else
 		printf("unused user_id=%d\n", local_stats->user_id);
 	printf("call %s\n", __FUNCTION__);
+
+	uint8_t* ip = (uint8_t*) local_stats->remote_host;
+	
+	printf("remote IP(%u)\n", local_stats->remote_host); // : %d.%d.%d.%d,ip[0], ip[1], ip[2], ip[3]
+
+
 	return OK;
 }
 

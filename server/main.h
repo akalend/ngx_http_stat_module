@@ -40,6 +40,7 @@ typedef struct {
         char*       servername; /* servername */			\
         float       exe_time;   /* execute scrit time */	\
         uint32_t    tuple_count; /* count of tuple */		\
+        uint32_t    remote_host; /* IP of remote host */	\
         tuple_t*    tuples; 	 /*array of tuples 	*/
 
 typedef struct {

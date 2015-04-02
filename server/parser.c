@@ -10,6 +10,7 @@ static f_cb cb_host;
 static f_cb cb_servername;
 static f_cb cb_time;
 static f_cb cb_status;
+static f_cb cb_remote_host;
 
 static user_info_t user_info;
 
@@ -86,6 +87,12 @@ array_t* parse_format(const char* format) {
 	        //strncpy(arr[i].name, tok, strlen(tok) > 8 ? 8 : strlen(tok));
 	        arr[i].cb = cb_host;
 
+        } else if (strcmp(tok ,"remote_host") == 0){
+            printf("[%d] remote_host is Ok\n", i);
+
+            //strncpy(arr[i].name, tok, strlen(tok) > 8 ? 8 : strlen(tok));
+            arr[i].cb = cb_remote_host;
+
 	    } else if (strcmp(tok ,"time") == 0){
 	        printf("[%d] time is Ok\n", i);
 
@@ -136,7 +143,6 @@ static void cb_host (F_PARMS){
     printf("host=%s\n", st->host);
 }
 
-
 static void cb_servername (F_PARMS){
     // printf("---------- %s  ---------------\n", __FUNCTION__);
    st->servername = strndup(arg, arg_len);
@@ -146,6 +152,25 @@ static void cb_servername (F_PARMS){
 
 static void cb_status (F_PARMS){
     int16_t *status = (int16_t *) arg; 
+}
+
+static void cb_remote_host (F_PARMS){
+    
+   uint32_t * p  = (uint32_t *) arg;
+   st->remote_host = *p;
+
+
+
+// struct in_addr {
+//         unsigned long int s_addr;
+// }
+
+    struct in_addr ina;
+    ina.s_addr = *p;
+    char * ip = inet_ntoa(ina);
+
+   printf("remote_host=%u %s\n",  st->remote_host, ip ? ip : "----" );
+
 }
 
 

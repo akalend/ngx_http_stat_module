@@ -362,19 +362,21 @@ static void
 ngx_http_stat_cb_remotehost(udp_stream_t* buf, ngx_http_request_t *r, ngx_str_t *arg) {
 
     ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "call %s", __FUNCTION__ );
+
+    (void) ngx_write_console(ngx_stderr, "--------------   remote host  --------------\n", 45);
+
     ngx_log_debug1(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "REMOTE_HOST %s", r->connection->addr_text.data );
   
     // r->connection->addr_text.   REMOTE_HOST
     struct sockaddr_in *  sin = (struct sockaddr_in *) r->connection->sockaddr;
 
-    stat_buf_t* p = (stat_buf_t*)(buf->data + buf->lenght);  
+    stat_buf_t* p = (stat_buf_t*)(buf->data + buf->lenght);
     buf->lenght =  buf->lenght + 5; 
 
-    p->len = (uint8_t) 4;
+    p->len = (uint8_t) 4;  // only IP 4
     ngx_memcpy(p->data, (u_char *) &sin->sin_addr, p->len);
 
-    (void) ngx_write_console(ngx_stderr, "--------------   remote host  -----------------\n", 45);
-    ngx_log_debug4(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "p=%d.%d.%d.%d", p->data[0], p->data[1], p->data[2], p->data[3] );
+    ngx_log_debug4(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, "IP=%d.%d.%d.%d", p->data[0], p->data[1], p->data[2], p->data[3] );
 }
 
 static void 
