@@ -154,22 +154,13 @@ static void cb_status (F_PARMS){
     int16_t *status = (int16_t *) arg; 
 }
 
+        
 static void cb_remote_host (F_PARMS){
     
    uint32_t * p  = (uint32_t *) arg;
    st->remote_host = *p;
 
-
-
-// struct in_addr {
-//         unsigned long int s_addr;
-// }
-
-    struct in_addr ina;
-    ina.s_addr = *p;
-    char * ip = inet_ntoa(ina);
-
-   printf("remote_host=%u %s\n",  st->remote_host, ip ? ip : "----" );
+   printf("remote_host=%u\n",  st->remote_host);
 
 }
 
